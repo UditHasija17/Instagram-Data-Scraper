@@ -5,8 +5,6 @@ collections.Mapping = collections.abc.Mapping
 collections.Callable = collections.abc.Callable
 import instaloader
 import csv
-from itertools import dropwhile
-from datetime import datetime
 
 class GetInstagramProfile():
     def __init__(self):
@@ -21,15 +19,13 @@ class GetInstagramProfile():
          print("All Post Pics Downloaded")
          
     def posts_info_with_comments(self,username):
-        #SINCE = datetime(2023, 1, 28)
-        #UNTIL = datetime(2023, 3, 30)
         with open(username+'.csv', 'w', newline='', encoding='utf-8') as file:
             self.ig = instaloader.Instaloader()
             self.ig.load_session_from_file("love_by_fate") #Change username accordingly
             writer = csv.writer(file)
             posts = instaloader.Profile.from_username(self.ig.context, username).get_posts()
             mylist=[]
-            for post in posts: #(lambda p: p.date > SINCE, dropwhile(lambda p: p.date > UNTIL, posts)):
+            for post in posts: 
                 pdate = str(post.date)
                 pprofile = (post.profile)
                 pcaption = (post.caption)
