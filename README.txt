@@ -3,6 +3,7 @@ Run in VS code(preferable).
 Step 1 - open Firefox browser and login in instagram with any account password 
 Step 2 - Run cookiecreater file given in this repo which will take cookie from firefox and transfer it to my program for my module to work
 (direct login issue from backend so using this method)
+Step 3i - Now in main file in line 24 and 48 theres load_session_command change love_by_fate to the username of the account you used in firefox to login
 Step 3 - Now Use main file and enter the choice according to which we need the data
 Step 4 - Enter the username and no . of posts data you need accordingly
 Step 5 - If some error occurs after some tries like http 401 or it stops working after some time repeat step 2 and 3 as is logouts after some time from firefox due to multiple use .
