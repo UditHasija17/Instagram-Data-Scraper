@@ -1,4 +1,5 @@
 Prerequisite - Install Instaloader Module by using pip install Instaloader
+Run in VS code(preferable).
 Step 1 - open Firefox browser and login in instagram with any account password 
 Step 2 - Run cookiecreater file given in this repo which will take cookie from firefox and transfer it to my program for my module to work
 (direct login issue from backend so using this method)
