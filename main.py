@@ -8,7 +8,7 @@ import csv
 
 class GetInstagramProfile():
     def __init__(self):
-        ig = instaloader.Instaloader()
+        self.ig = instaloader.Instaloader()
 
     def user_profile_pic(self,username):
         self.ig.download_profile(username, profile_pic_only=True)
