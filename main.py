@@ -97,7 +97,7 @@ class GetInstagramProfile():
                 print('Post Info without comments Exported Successfully')                    
 
 if __name__=="__main__":
-    img = GetInstagramProfile("prosauce2k")
+    img = GetInstagramProfile("user's_instagram_account_name_goes_here")
     user = input("Enter Username: ")
     print("1.Print Profile Pic")
     print("2.Download Post pics")
